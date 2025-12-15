@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section className="relative min-h-screen flex items-center pt-20 bg-gradient-hero">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -17,14 +17,14 @@ const HeroSection = () => {
           priority
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-foreground/90 via-foreground/70 to-foreground/40" />
+        <div className="absolute inset-0 bg-linear-to-r from-accent-foreground/90 via-accent-foreground/70 to-accent-foreground/40" />
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-fadeUp">
-            <Heart className="w-4 h-4 text-amber" fill="currentColor" />
+            <Heart className="w-6 h-6 text-amber animate-pulse" fill="currentColor" />
             <span className="text-sm text-primary-foreground/90">Empowering Cameroonian Students</span>
           </div>
 
@@ -51,7 +51,7 @@ const HeroSection = () => {
           </div>
 
           {/* Trust indicators */}
-          <div className="flex flex-wrap items-center gap-8 mt-12 pt-8 border-t border-primary-foreground/20 animate-fadeUp" style={{ animationDelay: "0.4s" }}>
+          <div className="flex items-center gap-4 mt-12 pt-8 border-t border-primary-foreground/20 animate-fadeUp" style={{ animationDelay: "0.4s" }}>
             <div>
               <p className="text-3xl font-display text-primary-foreground">1,500+</p>
               <p className="text-sm text-primary-foreground/60">Students Fed</p>
