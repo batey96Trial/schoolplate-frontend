@@ -19,10 +19,10 @@ const SignUpCard = () => {
                         <TextInput id="tel" type="tel" placeholder="Telephone" className=" ring-input" required shadow rightIcon={FaPhone} />
                     </div>
                     <div>
-                        <TextInput id="password1" type="password" placeholder="password" required rightIcon={FaLock} />
+                        <TextInput id="password" type="password" placeholder="password" required rightIcon={FaLock} />
                     </div>
                     <div>
-                        <TextInput id="password1" type="password" placeholder="Confirm password" required />
+                        <TextInput id="password-confirm" type="password" placeholder="Confirm password" required />
                     </div>
                     <Button variant="default" className=" bg-gradient-hero cursor-pointer" >Sign Up</Button>
                 </form>

@@ -31,10 +31,6 @@ const LoginCard = () => {
                     <Button type="button" variant="default" className=" bg-gradient-hero cursor-pointer" >Log in</Button>
                 </form>
             </Card>
-            <div className="flex gap-2 justify-center">
-                <p>New User?</p>
-                <Link href="/signup" className="text-amber">Create an Account</Link>
-            </div>
         </div>
 
 

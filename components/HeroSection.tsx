@@ -17,7 +17,7 @@ const HeroSection = () => {
           priority
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-r from-accent-foreground/90 via-accent-foreground/20 to-accent-foreground/20" />
+        <div className="absolute inset-0 bg-linear-to-r from-accent-foreground/90 via-accent-foreground/40 to-accent-foreground/30" />
       </div>
 
       {/* Content */}
