@@ -5,13 +5,17 @@ import { Button } from "../ui/button";
 import { FaGoogle, FaFacebook, FaPhone, FaLock } from "react-icons/fa";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const LoginCard = () => {
     return (
         <div className="gap-4 flex-col flex">
             <Card className="bg-card">
                 <h1 className="text-center text-2xl font-black">Login to your account</h1>
-                <Button variant="amber" className="cursor-pointer bg-accent shadow-soft"><FaGoogle color="blue" className=" rotate-10 text-3xl" /> Login with Google</Button>
+                <Button variant="outline" className="cursor-pointer shadow-soft">
+                    <Image src="/googleicon.svg" alt="ic" width={20} height={20} /> 
+                    Login with Google
+                    </Button>
                 <Button className="cursor-pointer border-secondary bg-blue-500 hover:bg-blue-500"><FaFacebook />Login with Facebook</Button>
                 <HRText text="OR" />
                 <form className="flex flex-col gap-4">
