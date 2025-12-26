@@ -9,36 +9,75 @@ import Image from "next/image";
 
 const LoginCard = () => {
     return (
-        <div className="gap-4 flex-col flex">
-            <Card className="bg-card">
-                <h1 className="text-center text-2xl font-black">Login to your account</h1>
-                <Button variant="outline" className="cursor-pointer shadow-soft">
-                    <Image src="/googleicon.svg" alt="ic" width={20} height={20} /> 
+        <div className='gap-4 flex-col flex'>
+            <Card className='bg-card'>
+                <h1 className='text-center text-2xl font-black'>
+                    Login to your account
+                </h1>
+                <Button
+                    variant='outline'
+                    className='cursor-pointer shadow-soft'
+                >
+                    <Image
+                        src='/googleicon.svg'
+                        alt='ic'
+                        width={20}
+                        height={20}
+                    />
                     Login with Google
-                    </Button>
-                <Button className="cursor-pointer border-secondary bg-blue-500 hover:bg-blue-500"><FaFacebook />Login with Facebook</Button>
-                <HRText text="OR" />
-                <form className="flex flex-col gap-4">
+                </Button>
+                <Button className='cursor-pointer border-secondary bg-blue-500 hover:bg-blue-700'>
+                    <FaFacebook />
+                    Login with Facebook
+                </Button>
+                <HRText text='OR' />
+                <form className='flex flex-col gap-4'>
                     <div>
-                        <TextInput id="tel" type="tel" placeholder="Telephone" className=" ring-input" required shadow rightIcon={FaPhone} inputMode="numeric" pattern="[0-9]*" />
+                        <TextInput
+                            id='tel'
+                            type='tel'
+                            placeholder='Telephone'
+                            className=' ring-input'
+                            required
+                            shadow
+                            rightIcon={FaPhone}
+                            inputMode='numeric'
+                            pattern='[0-9]*'
+                        />
                     </div>
                     <div>
-                        <TextInput id="password1" type="password" placeholder="password" required shadow rightIcon={FaLock} />
+                        <TextInput
+                            id='password1'
+                            type='password'
+                            placeholder='password'
+                            required
+                            shadow
+                            rightIcon={FaLock}
+                        />
                     </div>
-                    <div className="flex items-center gap-2 justify-between">
-                        <div className="flex items-center gap-1">
-                            <Checkbox id="remember" className="focus:ring-0 text-primary" />
-                            <Label htmlFor="remember">Remember me</Label>
+                    <div className='flex items-center gap-2 justify-between'>
+                        <div className='flex items-center gap-1'>
+                            <Checkbox
+                                id='remember'
+                                className='focus:ring-0 text-primary'
+                            />
+                            <Label htmlFor='remember'>Remember me</Label>
                         </div>
-                        <Link href="#" className="text-sm">Forgot Password?</Link>
+                        <Link href='#' className='text-sm'>
+                            Forgot Password?
+                        </Link>
                     </div>
-                    <Button type="button" variant="default" className=" bg-gradient-hero cursor-pointer" >Log in</Button>
+                    <Button
+                        type='button'
+                        variant='default'
+                        className=' bg-gradient-hero cursor-pointer'
+                    >
+                        Log in
+                    </Button>
                 </form>
             </Card>
         </div>
-
-
     );
-}
+};
 
 export default LoginCard;
