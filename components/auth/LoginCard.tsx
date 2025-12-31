@@ -20,7 +20,7 @@ const LoginCard = () => {
                 <HRText text="OR" />
                 <form className="flex flex-col gap-4">
                     <div>
-                        <TextInput id="tel" type="tel" placeholder="Telephone" className=" ring-input" required shadow rightIcon={FaPhone} inputMode="numeric" pattern="[0-9]*" />
+                        <TextInput id="tel-login" type="tel" placeholder="Telephone" className=" ring-input" required shadow rightIcon={FaPhone} inputMode="numeric" pattern="[0-9]*" />
                     </div>
                     <div>
                         <TextInput id="password1" type="password" placeholder="password" required shadow rightIcon={FaLock} />

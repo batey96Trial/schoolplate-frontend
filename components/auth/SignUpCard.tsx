@@ -20,7 +20,7 @@ const SignUpCard = () => {
                         <TextInput id="name" type="text" placeholder="UserName" className=" ring-input" required shadow rightIcon={FaUser} />
                     </div>
                     <div>
-                        <TextInput id="tel" type="tel" placeholder="Telephone" className=" ring-input" required shadow rightIcon={FaPhone} />
+                        <TextInput id="tel-signup" type="tel" placeholder="Telephone" className=" ring-input" required shadow rightIcon={FaPhone} />
                     </div>
                     <div>
                         <TextInput id="password" type="password" placeholder="password" required rightIcon={FaLock} />
