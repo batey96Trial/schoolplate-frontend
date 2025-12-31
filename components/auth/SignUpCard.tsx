@@ -39,7 +39,7 @@ const SignUpCard = () => {
 							type='tel'
 							placeholder='Telephone'
 							className=' ring-input'
-							pattern='6\d{8}'
+							pattern='6[0-9]{8}'
 							required
 							shadow
 							rightIcon={FaPhone}

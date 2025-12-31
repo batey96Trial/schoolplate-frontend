@@ -25,7 +25,7 @@ const Navbar = () => {
 					</a>
 
 					{/* Desktop Navigation */}
-					<div className='hidden md:flex items-center gap-8'>
+					<div className='hidden lg:flex items-center gap-8'>
 						<a
 							href='#how-it-works'
 							className='text-muted-foreground hover:text-foreground transition-colors'>
@@ -49,7 +49,7 @@ const Navbar = () => {
 					</div>
 
 					{/* CTA Buttons */}
-					<div className='hidden md:flex items-center gap-4'>
+					<div className='hidden lg:flex items-center gap-4'>
 						<Button variant='ghost' asChild>
 							<Link href='/auth'>Sign In</Link>
 						</Button>
@@ -60,7 +60,7 @@ const Navbar = () => {
 
 					{/* Mobile Menu Toggle */}
 					<button
-						className='md:hidden p-2'
+						className='lg:hidden p-2'
 						onClick={() => setIsOpen(!isOpen)}
 						aria-label='Toggle menu'>
 						{isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -69,37 +69,44 @@ const Navbar = () => {
 
 				{/* Mobile Navigation */}
 				{isOpen && (
-					<div className='md:hidden py-4 border-t border-border/50 animate-fadeIn'>
+					<div className='lg:hidden py-4 border-t border-border/50 animate-fadeIn'>
 						<div className='flex flex-col gap-4'>
 							<a
 								href='#how-it-works'
+								onClick={() => setIsOpen(!isOpen)}
 								className='text-muted-foreground hover:text-foreground transition-colors py-2'>
 								How it Works
 							</a>
 							<a
 								href='#students'
+								onClick={() => setIsOpen(!isOpen)}
 								className='text-muted-foreground hover:text-foreground transition-colors py-2'>
 								Students
 							</a>
 							<a
 								href='#pricing'
+								onClick={() => setIsOpen(!isOpen)}
 								className='text-muted-foreground hover:text-foreground transition-colors py-2'>
 								Sponsorship Plans
 							</a>
 							<a
 								href='#impact'
+								onClick={() => setIsOpen(!isOpen)}
 								className='text-muted-foreground hover:text-foreground transition-colors py-2'>
 								Our Impact
 							</a>
 							<div className='flex flex-col gap-2 pt-4 border-t border-border/50'>
 								<Button variant='ghost' className='w-full'>
-									Sign In
+									<Link href='/auth'>Sign In</Link>
 								</Button>
 								<Button variant='default' className='w-full'>
-									Start Sponsoring
+									<Link href='#'>Start Sponsoring</Link>
 								</Button>
 							</div>
 						</div>
+						<div
+							onClick={() => setIsOpen(!isOpen)}
+							className='fixed w-screen h-screen top-0 left-0 backdrop-blur-lg bg-white/30 -z-1'></div>
 					</div>
 				)}
 			</div>

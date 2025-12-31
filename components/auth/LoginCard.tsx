@@ -16,11 +16,11 @@ const LoginCard = () => {
 				</h1>
 				<Button variant='outline' className='cursor-pointer shadow-soft'>
 					<Image src='/googleicon.svg' alt='ic' width={20} height={20} />
-					Login with Google
+					Continue with Google
 				</Button>
 				<Button className='cursor-pointer border-secondary bg-blue-500 hover:bg-blue-700'>
 					<FaFacebook />
-					Login with Facebook
+					Continue with Facebook
 				</Button>
 				<HRText text='OR' />
 				<form className='flex flex-col gap-4'>
@@ -34,7 +34,7 @@ const LoginCard = () => {
 							shadow
 							rightIcon={FaPhone}
 							inputMode='numeric'
-							pattern='[0-9]*'
+							pattern='6[0-9]{8}'
 						/>
 					</div>
 					<div>
@@ -52,12 +52,14 @@ const LoginCard = () => {
 							<Checkbox id='remember' className='focus:ring-0 text-primary' />
 							<Label htmlFor='remember'>Remember me</Label>
 						</div>
-						<Link href='#' className='text-sm'>
+						<Link
+							href='#'
+							className='text-sm hover:text-amber-light transition'>
 							Forgot Password?
 						</Link>
 					</div>
 					<Button
-						type='button'
+						type='submit'
 						variant='default'
 						className=' bg-gradient-hero cursor-pointer'>
 						Log in
