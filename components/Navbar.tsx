@@ -24,7 +24,7 @@ const Navbar = () => {
 							</span>
 						</div>
 						<span className='font-display text-2xl text-foreground'>
-							School<span className="text-amber">Plate</span>
+							SchoolPlate
 						</span>
 					</a>
 
