@@ -12,9 +12,9 @@ const Footer = () => {
 	return (
 		<footer className='bg-footer text-cream py-16'>
 			<div className='container mx-auto px-4'>
-				<div className='grid md:grid-cols-4 gap-12 mb-12'>
+				<div className='grid sm:grid-cols-3 lg:grid-cols-4 gap-12 mb-12'>
 					{/* Brand */}
-					<div>
+					<div className="flex flex-col sm:col-span-3 lg:col-span-1">
 						<div className='flex items-center gap-2 mb-4'>
 							<div className='w-10 h-10 rounded-full bg-primary flex items-center justify-center'>
 								<span className='text-primary-foreground font-display text-xl'>
@@ -27,7 +27,7 @@ const Footer = () => {
 							Connecting donors with students through partner restaurants. Your
 							donation becomes a hot meal — guaranteed, no cash involved.
 						</p>
-						<div className='flex gap-4'>
+						<div className='flex gap-4 mx-auto'>
 							<a
 								href='#'
 								className='w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-amber/20 transition-colors'>
@@ -52,7 +52,9 @@ const Footer = () => {
 					</div>
 
 					{/* Quick Links */}
-					<div>
+					<div className="flex flex-col sm:items-center">
+						<div>
+
 						<h4 className='font-display text-lg mb-4'>Quick Links</h4>
 						<ul className='space-y-3'>
 							<li>
@@ -91,10 +93,13 @@ const Footer = () => {
 								</a>
 							</li>
 						</ul>
+						</div>
 					</div>
 
 					{/* Support */}
-					<div>
+					<div className="flex flex-col sm:items-center">
+						<div>
+
 						<h4 className='font-display text-lg mb-4'>Support</h4>
 						<ul className='space-y-3'>
 							<li>
@@ -133,13 +138,16 @@ const Footer = () => {
 								</a>
 							</li>
 						</ul>
+						</div>
 					</div>
 
 					{/* Contact */}
-					<div>
-						<h4 className='font-display text-lg mb-4'>Contact Us</h4>
+					<div className="flex flex-col sm:items-center">
+						
+
+			<h4 className='font-display text-lg mb-4'>Contact Us</h4>
 						<ul className='space-y-4'>
-							<li className='flex items-start gap-3'>
+							<li className='flex items-start gap-3 text-center'>
 								<MapPin className='w-5 h-5 text-amber shrink-0 mt-0.5' />
 								<span className='text-primary-foreground/60 text-sm'>
 									123 Unity Avenue, Bastos
@@ -149,17 +157,19 @@ const Footer = () => {
 							</li>
 							<li className='flex items-center gap-3'>
 								<Phone className='w-5 h-5 text-amber shrink-0' />
-								<span className='text-primary-foreground/60 text-sm'>
+								<a href="tel:681248724" className='text-primary-foreground/60 text-sm'>
 									+237 681248724
-								</span>
+								</a>
 							</li>
 							<li className='flex items-center gap-3'>
 								<Mail className='w-5 h-5 text-amber shrink-0' />
-								<span className='text-primary-foreground/60 text-sm'>
+								<a href="mailto:support@schoolplate.cm" className='text-primary-foreground/60 text-sm'>
 									support@schoolplate.cm
-								</span>
+								</a>
 							</li>
 						</ul>
+						
+
 					</div>
 				</div>
 

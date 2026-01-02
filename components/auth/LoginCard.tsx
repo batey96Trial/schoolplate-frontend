@@ -14,9 +14,9 @@ const LoginCard = () => {
                 <h1 className="text-center text-2xl font-black">Login to your account</h1>
                 <Button variant="outline" className="cursor-pointer shadow-soft">
                     <Image src="/googleicon.svg" alt="ic" width={20} height={20} /> 
-                    Login with Google
+                    Continue with Google
                     </Button>
-                <Button className="cursor-pointer border-secondary bg-blue-500 hover:bg-blue-500"><FaFacebook />Login with Facebook</Button>
+                <Button className="cursor-pointer border-secondary bg-blue-500 hover:bg-blue-600"><FaFacebook />Continue with Facebook</Button>
                 <HRText text="OR" />
                 <form className="flex flex-col gap-4">
                     <div>
@@ -32,7 +32,7 @@ const LoginCard = () => {
                         </div>
                         <Link href="#" className="text-sm">Forgot Password?</Link>
                     </div>
-                    <Button type="button" variant="default" className=" bg-gradient-hero cursor-pointer" >Log in</Button>
+                    <Button type="button" variant="hero-gradient" className="cursor-pointer" >Log in</Button>
                 </form>
             </Card>
         </div>
