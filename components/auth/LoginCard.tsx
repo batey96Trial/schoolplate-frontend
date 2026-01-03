@@ -1,22 +1,32 @@
 "use client";
 
-import {Card, Checkbox, Label, TextInput, HRText} from "flowbite-react";
+import {Card, Checkbox, Label, TextInput, HRText, Spinner} from "flowbite-react";
 import {Button} from "../ui/button";
-import {FaGoogle, FaFacebook, FaPhone, FaLock} from "react-icons/fa";
+import {FaFacebook, FaPhone, FaLock} from "react-icons/fa";
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 const LoginCard = () => {
+    const [isLoadingGL, setIsLoadingGL] = useState(false); //Google login state
+    const [isLoadingFBL, setIsLoadingFBL] = useState(false); //Facebook login state
+    const [isLoadingL, setIsLoadingL] = useState(false); //Manual login state
+
     return (
         <div className="gap-4 flex-col flex">
             <Card className="bg-card">
                 <h1 className="text-center text-2xl font-black">Login to your account</h1>
-                <Button variant="outline" className="cursor-pointer shadow-soft">
+                <Button variant="outline" onClick={() => setIsLoadingGL(true)} className="cursor-pointer shadow-soft">
+                    {isLoadingGL && <Spinner color="google" aria-label="loading" />}
                     <Image src="/googleicon.svg" alt="ic" width={20} height={20} /> 
                     Continue with Google
-                    </Button>
-                <Button className="cursor-pointer border-secondary bg-blue-500 hover:bg-blue-600"><FaFacebook />Continue with Facebook</Button>
+                </Button>
+                <Button onClick={() => setIsLoadingFBL(true)} className="cursor-pointer border-secondary bg-blue-500 hover:bg-blue-600">
+                    {isLoadingFBL && <Spinner color="facebook" light aria-label="loading" />}
+                    <FaFacebook />
+                    Continue with Facebook
+                </Button>
                 <HRText text="OR" />
                 <form className="flex flex-col gap-4">
                     <div>
@@ -32,7 +42,10 @@ const LoginCard = () => {
                         </div>
                         <Link href="#" className="text-sm">Forgot Password?</Link>
                     </div>
-                    <Button type="button" variant="hero-gradient" className="cursor-pointer" >Log in</Button>
+                    <Button type="submit" variant="hero-gradient" onClick={() => setIsLoadingL(true)} className="cursor-pointer" >
+                        {isLoadingL && <Spinner color="default" aria-label="loading" />}
+                        Log in
+                    </Button>
                 </form>
             </Card>
         </div>
