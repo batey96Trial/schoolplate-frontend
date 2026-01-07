@@ -9,21 +9,21 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Home = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <HowItWorks />
-        <StudentsSection />
-        <PricingSection />
-        <ImpactSection />
-        <TestimonialsSection />
-        <CTASection />
-      </main>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className='min-h-screen bg-background'>
+			<Navbar />
+			<main>
+				<HeroSection />
+				<HowItWorks />
+				<StudentsSection />
+				<PricingSection />
+				<ImpactSection />
+				<TestimonialsSection />
+				<CTASection />
+			</main>
+			<Footer />
+		</div>
+	);
 };
 
 export default Home;
