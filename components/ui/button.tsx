@@ -17,13 +17,15 @@ const buttonVariants = cva(
 					"border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
 				secondary:
 					"bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-soft",
-				ghost: "hover:bg-accent hover:text-accent-foreground",
+				ghost: "bg-accent hover:bg-accent/80 text-accent-foreground",
 				link: "text-primary underline-offset-4 hover:underline",
 				hero: "bg-gradient-amber text-foreground font-bold shadow-glow hover:scale-105 hover:shadow-lg",
 				"hero-outline":
 					"border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 backdrop-blur-sm",
 				amber:
-					"bg-amber text-foreground hover:bg-amber-light shadow-soft hover:shadow-medium"
+					"bg-amber text-foreground hover:bg-amber-light shadow-soft hover:shadow-medium",
+				"hero-gradient":
+					"bg-gradient-hero text-primary-foreground shadow-soft hover:shadow-medium",
 			},
 			size: {
 				default: "h-11 px-6 py-2",

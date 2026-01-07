@@ -56,7 +56,7 @@ export default function RootLayout({
 					disableTransitionOnChange>
 					<div className=''>
 						{children}
-						<div className='fixed float-right right-0 top-[93%] -translate-x-1/6'>
+						<div className='fixed float-right right-0 top-[93%] -translate-x-1/6 z-99999'>
 							<ThemeSwitcher />
 						</div>
 					</div>
