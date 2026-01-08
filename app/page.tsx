@@ -3,7 +3,6 @@ import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
 import StudentsSection from '@/components/StudentsSection';
 import PricingSection from '@/components/PricingSection';
-import CameroonMapSection from '@/components/CameroonMapSection';
 import ImpactSection from '@/components/ImpactSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
@@ -18,7 +17,6 @@ const Home = () => {
         <HowItWorks />
         <StudentsSection />
         <PricingSection />
-        <CameroonMapSection />
         <ImpactSection />
         <TestimonialsSection />
         <CTASection />
