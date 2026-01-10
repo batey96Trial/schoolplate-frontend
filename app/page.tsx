@@ -8,6 +8,7 @@ import ImpactSection from '@/components/ImpactSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
+import FadeAnimation from '@/components/ui/fading-animation';
 
 const Home = () => {
   return (
@@ -15,9 +16,15 @@ const Home = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <HowItWorks />
-        <StudentsSection />
-        <PricingSection />
+        <FadeAnimation>
+          <HowItWorks />
+        </FadeAnimation>
+        <FadeAnimation>
+          <StudentsSection />
+        </FadeAnimation>
+        <FadeAnimation>
+          <PricingSection />
+        </FadeAnimation>
         {/* <CameroonMapSection /> */}
         <ImpactSection />
         <TestimonialsSection />
