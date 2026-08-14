@@ -18,10 +18,10 @@ const Contact = () => {
       <Navbar />
       <main>
         <Hero tabsRef={tabsRef} />
-        <FAQ />
         <QuickHelp />
-        <Map />
         <Form tabsRef={tabsRef} />
+        <FAQ />
+        <Map />
       </main>
       <Footer />
     </div>

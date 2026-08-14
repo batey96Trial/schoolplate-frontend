@@ -5,8 +5,8 @@ import { FaBolt, FaWhatsapp } from 'react-icons/fa';
 const QuickHelp = () => {
   return (
     <section id="quick-help" className="py-16 px-2 lg:py-20">
-      <div className="max-w-3xl mx-auto bg-destructive/10 border border-destructive/50 rounded-2xl p-8 text-center">
-        <h2 className="text-2xl font-bold text-secondary mb-3">Quick Help</h2>
+      <div className="max-w-3xl mx-auto bg-amber/10 border border-amber/40 rounded-2xl p-8 text-center">
+        <h2 className="text-2xl font-bold text-primary mb-3">Quick Help</h2>
         <p className="mb-6">
           Need immediate help with anything?
           <br />
